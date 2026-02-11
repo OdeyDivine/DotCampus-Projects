@@ -21,6 +21,9 @@ body{
 .cta{
     margin: 70px 30px 40px;
 }
+.mlogo{
+    display: none;
+}
 .cta h1{
     text-align: center;
     line-height: 1.2;
@@ -50,10 +53,63 @@ input{
     border-radius: 25px;
     padding: 15px 20px;
     width: 80%;
-    margin: 0 auto 60px;
+    margin: 30px auto 60px;
 }
 input::placeholder{
     color: hsl(0, 80%, 86%);
     font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media (min-width: 1440px){
+    .container{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        width: auto;
+        justify-content: space-between;
+    }
+    .logo{
+        display: none;
+    }
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: block;
+        height: 100%;
+        width: 60%;
+    
+    }
+    .mlogo{
+        display: block;
+        margin-top: 70px;
+    }
+    .mlogo img{
+        margin: 0;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+    }
+    .cta{
+        margin: 0;
+        position: absolute;
+        left: 10%;
+    }
+    .cta h1, .cta p{
+        text-align: left;
+    }
+    .cta h1{
+        padding-top: 90px;
+        font-size: 60px;
+    }
+    .cta p{
+        width: 40%;
+        font-size: 20px;
+    }
+    input{
+    border: 1px solid hsl(0, 80%, 86%);
+    width: 40%;
+    margin: 40px 0;
+}
 }
