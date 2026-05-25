@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Sign up for our upcoming event</h1>
+    <form action="#" method="post">
+       <label for="name">Full Name</label> 
+       <input type="text" id="name" name="name" placeholder="joe doe" required>
+       <br> <br>
+       
+       <label for="email">Email Address</label>
+       <input type="email" name="email" id="email" placeholder="@gmail.com" required>
+       <br> <br>
+
+       <label for="phone_number">Phone Number</label>
+       <input type="tel" name="phone_number" id="phone_number" placeholder="+234" required>
+        <br> <br>
+
+        <label for="course">Select Course</label>
+        <select name="course" id="course" required>
+            <option value="SWE">Software Engineering</option>
+            <option value="DE">Data Engineering</option>
+            <option value="DS">Data Science</option>
+            <option value="DA">Data Analysis</option>
+            <option value="CE">Cloud Engineering</option>
+        </select>
+        <br> <br>
+
+        <label for="suggestion">What are your expectations?</label>
+        <textarea name="suggestion" id="suggestion" cols="30" rows="7"></textarea>
+        <br> <br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <br>
+    <table border="1px">
+        <thead>
+            <tr>
+                <th>Course</th>
+                <th>Instructor</th>
+                <th>Time</th>
+                <th>Day</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Data Engineering</td>
+                <td rowspan="2">Odey Divine</td>
+                <td rowspan="3">7pm</td>
+                <td>Mon</td>
+            </tr>
+            <tr>
+                <td>Software Engineering</td>
+                <td>Tuesday</td>
+            </tr>
+            <tr>
+                <td>Data Science</td>
+                <td rowspan="2">DM Tech</td>
+                <td>Wed</td>
+            </tr>
+            <tr>
+                <td>Product Design</td>
+                <td>3pm</td>
+                <td>Thurs</td>
+            </tr>
+        </tbody>
+            <tr>
+                <td colspan="3">See you in class</td>
+                <td>Thank you</td>
+            </tr>
+        <tfoot>
+
+        </tfoot>
+    </table>
+</body>
+</html>
