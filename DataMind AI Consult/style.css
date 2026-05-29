@@ -16,8 +16,11 @@ body{
 
 header{
     padding: 20px 30px;
-     width: 100vw;
-     height: 5%;
+     width: 100%;
+     height: auto;
+     position: fixed;
+     top: 0;
+     z-index: 1;
 }
 
 nav{
@@ -69,4 +72,53 @@ button{
 
 .contact_whatsapp:hover{
     background-color: orange;
+}
+.home_page{
+    padding: 150px 30px;
+}
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+.home_text{
+    flex-basis: 1;
+}
+.home_text h1{
+    font-size: 36px;
+    text-transform: uppercase;
+}
+.home_text h1 span{
+    color: var(--secondary);
+}
+.home_text p{
+    font-size: 20px;
+}
+
+.home_image img{
+    object-fit: cover;
+}
+.home_page_button{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.home_page_button button{
+    text-align: center;
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.home_page_button .start{
+    color: #fff;
+    background-color: var(--primary);
+}
+.home_page_button .methodology{
+    color: var(--primary);
+    background-color: var(--secondary);
 }
