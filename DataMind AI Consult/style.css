@@ -19,6 +19,7 @@ header{
      width: 100%;
      height: auto;
      position: fixed;
+     background-color: #fff;
      top: 0;
      z-index: 1;
 }
@@ -81,6 +82,7 @@ button{
     align-items: center;
     justify-content: center;
     gap: 150px;
+    height: 60vh;
 }
 .home_text{
     flex-basis: 1;
@@ -98,6 +100,7 @@ button{
 
 .home_image img{
     object-fit: cover;
+    box-shadow: 1px 3px 60px 2px rgba(250,130,18,1);
 }
 .home_page_button{
     display: flex;
@@ -129,4 +132,25 @@ button{
 }
 .home_page_button .methodology:hover{
     background-color: orange;
+}
+
+#services{
+    background-color: #fff;
+}
+.services_text{
+    text-align: center;
+    padding-top: 30px;
+}
+.services_text h4{
+    color: var(--secondary);
+    font-weight: 400;
+    font-size: 20px;
+}
+.services_text h3{
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 30px;
+}
+.services_text p{
+    font-size: 20px;
 }
